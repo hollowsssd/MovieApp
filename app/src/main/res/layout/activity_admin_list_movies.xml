@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/btnBack1"
+        android:layout_width="52dp"
+        android:layout_height="50dp"
+        android:layout_gravity="start"
+        android:background="@null"
+        android:contentDescription="Quay lại"
+        android:src="@drawable/baseline_arrow_back_24" />
+
+    <!-- Search + Button hàng ngang -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="266dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_view_background"
+            android:iconifiedByDefault="false"
+            android:padding="10dp"
+            android:queryBackground="@android:color/transparent"
+            android:queryHint="Search..."
+            android:theme="@style/SearchViewStyle" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnthem"
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/rounded_button"
+            android:text="Thêm phim"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:backgroundTint="@color/dark_red"
+            app:cornerRadius="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:text="Danh sách tất cả bộ phim"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <!-- Horizontal category list -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:id="@+id/categoryContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <!-- Movie list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/movieRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1" />
+</LinearLayout>

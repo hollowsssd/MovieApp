@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_rounded">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập mật khẩu hiện tại"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editPassNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="mật khẩu hiện tại"
+        android:background="@drawable/bg_edittext"
+        android:padding="12dp"
+        android:inputType="textPassword"
+
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập mật khẩu mới"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editChangePass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mật khẩu mới"
+        android:background="@drawable/bg_edittext"
+        android:padding="12dp"
+        android:inputType="textPassword"
+
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập lại mật khẩu mới"
+        android:layout_marginTop="15dp"
+
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editChangePassAgain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Nhập lại mật khẩu mới"
+        android:background="@drawable/bg_edittext"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/btnCancelChangePass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:text="Hủy"
+            android:textAlignment="textEnd"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:textColor="@color/purple" />
+
+        <Button
+            android:id="@+id/btnConfirmChangePass"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Xác nhận"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/purple"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
