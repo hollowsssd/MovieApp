@@ -10,7 +10,6 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import com.example.movieapp.R;
-import com.example.movieapp.Activities.IntroActivity;
 
 public class SplashActivity extends Activity {
 

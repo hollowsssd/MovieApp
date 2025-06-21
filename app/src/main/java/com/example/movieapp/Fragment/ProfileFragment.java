@@ -14,9 +14,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.movieapp.Activities.LoginActivity;
-import com.example.movieapp.Activities.RegisActivity;
 import com.example.movieapp.Activities.favoriteactivity;
-import com.example.movieapp.Activities.manageaccountactivity;
+import com.example.movieapp.Activities.ManageAccountActivity;
 import com.example.movieapp.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -99,7 +98,7 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(getActivity(), manageaccountactivity.class));
+                startActivity(new Intent(getActivity(), ManageAccountActivity.class));
             }
         });
 

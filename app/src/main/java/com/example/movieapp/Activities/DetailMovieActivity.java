@@ -117,7 +117,6 @@ public class DetailMovieActivity extends AppCompatActivity {
             tv.setTextSize(12f);
             tv.setTextColor(Color.WHITE);
             tv.setPadding(dpToPx(8), dpToPx(2), dpToPx(8), dpToPx(2)); // giống XML kia
-//            tv.setBackgroundResource(R.drawable.stroke_bg); // bo góc, màu nền nhẹ nếu muốn
 
             FlexboxLayout.LayoutParams params = new FlexboxLayout.LayoutParams(
                     ViewGroup.LayoutParams.WRAP_CONTENT,

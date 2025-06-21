@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-public class manageaccountactivity extends AppCompatActivity {
+public class ManageAccountActivity extends AppCompatActivity {
 
     TextView changeInformation, changePass;
     ImageView btnback;

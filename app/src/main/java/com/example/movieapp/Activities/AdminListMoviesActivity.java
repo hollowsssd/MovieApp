@@ -35,7 +35,7 @@ public class AdminListMoviesActivity extends AppCompatActivity {
 
 
     private MovieAdapter movieAdapter;
-    private ArrayList<Movie> allMovies = new ArrayList<>();
+
 
 
 

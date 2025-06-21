@@ -34,7 +34,7 @@ public class AdminActivity extends AppCompatActivity {
 
     // Phương thức chuyển đến trang diễn viên
     public void ChangeInformation(View v) {
-        Intent intent = new Intent(AdminActivity.this, manageaccountactivity.class);
+        Intent intent = new Intent(AdminActivity.this, ManageAccountActivity.class);
         startActivity(intent);
     }
 
