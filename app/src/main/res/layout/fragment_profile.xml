@@ -134,7 +134,6 @@
             android:layout_height="wrap_content"
             android:drawableEnd="@drawable/baseline_arrow_forward_ios_24"
             android:drawablePadding="8dp"
-            android:onClick="onMenuClick"
             android:padding="16dp"
             android:text="Đang xem"
             android:textColor="#FFFFFF"
@@ -153,7 +152,7 @@
             android:drawablePadding="8dp"
             android:background="?attr/selectableItemBackground"
             android:drawableStart="@drawable/add"
-            android:onClick="onMenuClick" />
+             />
 
         <TextView
             android:id="@+id/tvFavorite"
@@ -182,7 +181,7 @@
             android:drawablePadding="8dp"
             android:drawableStart="@drawable/law"
             android:background="?attr/selectableItemBackground"
-            android:onClick="onMenuClick" />
+             />
 
         <TextView
             android:id="@+id/tvContact"
@@ -196,7 +195,7 @@
             android:drawableEnd="@drawable/baseline_arrow_forward_ios_24"
             android:drawablePadding="8dp"
             android:background="?attr/selectableItemBackground"
-            android:onClick="onMenuClick" />
+            />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

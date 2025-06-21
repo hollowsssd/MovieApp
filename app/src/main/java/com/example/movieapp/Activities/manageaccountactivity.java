@@ -27,7 +27,7 @@ public class manageaccountactivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activitymanageaccount);
+        setContentView(R.layout.activity_manageaccount);
 
         changeInformation = findViewById(R.id.changeInformation);
         changePass = findViewById(R.id.changePass);
